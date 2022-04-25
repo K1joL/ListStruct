@@ -7,14 +7,14 @@ struct list
 	list();
 	~list();
 
-	void push_back(int data);						//Добавить элемент в конец списка
-	void pop_front();								//Удаление первого элемента в списке
-	void clear();									//Удаление всех элементов списка
+	void push_back(int data);					//Добавить элемент в конец списка
+	void pop_front();						//Удаление первого элемента в списке
+	void clear();							//Удаление всех элементов списка
 	int& operator[](const int index);				//Индексирование списка
 	void removebynum(int index);					//Удаление элемента по номеру
 	void removebydata(int data);					//Удаление элементов по значению
-	void change_data(int data,int index);			//Изменить данные в элементе под номером index
-	void SortList();								//Сортировка списка
+	void change_data(int data,int index);				//Изменить данные в элементе под номером index
+	void SortList();						//Сортировка списка
 	int GetSize() { return Size; };					//Получение размера списка
 
 	struct node
